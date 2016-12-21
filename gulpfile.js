@@ -33,6 +33,7 @@ gulp.task('js',function(){
 	return gulp.src([
 			'app/libs/jquery/dist/jquery.js',
 			'app/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
+			'app/libs/wow/dist/wow.js',
 			'app/js/main.js'
 	])
 	.pipe(concat('js.min.js'))
@@ -44,6 +45,7 @@ gulp.task('css',['scss'], function(){
 	return gulp.src([
 		'app/libs/normalize-css/normalize.css',
 		'app/libs/font-awesome/css/font-awesome.css',
+		'app/libs/wow/css/libs/animate.css',
 		'app/css/style.css'
 	])
 	.pipe(sourcemaps.init())

@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "fontawesome#^4.7.0",
-    "normalize-css": "normalize.css#^5.0.0"
+    "normalize-css": "normalize.css#^5.0.0",
+    "wow": "^1.1.2"
   }
 }

@@ -1,17 +1,75 @@
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 body{
 	font-size: 14px;
 	color: #333;
-	background: black; 
+	background: grey; 
+
+}
+header{
+	position: relative;
+	.carousel{
+		height: 100%;
+		.carousel-inner{
+			height: 100%;
+			
+			.item{
+				height: 100%;
+				width: 100%;
+				.slide{
+					position: relative;
+					background-position: center;
+					background-size: cover;
+					height: 100%;
+				}
+				.slide:after{
+					content: '';
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					background: rgba(0, 0, 0, 0.3);
+					top: 0;
+
+				}
+				.carousel-caption{
+					left: 10%;
+					right: 10%;
+					top: 40%;
+					h1{
+						font-size: 50px;
+						color:$pink;
+						text-shadow:1px 1px 1px black;
+
+					}
+					h2{
+						font-size: 40px;
+						color:$pink;
+						text-shadow:1px 1px 1px black;
+					}
+				}
+			}
+		}
+		.overlay{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+		}
+	}
+}
+
+.top{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
 }
 .top-line{
-	background:red; 
 	padding: 10px 0; 
 	ul{
 		margin:0px;
@@ -25,9 +83,11 @@ body{
 				text-decoration: none;
 				color: #fff;
 				i{
-					
+					color: $pink;
+					text-shadow:1px 1px 1px black;
 				}
 				span{
+					letter-spacing: 1px;
 					text-transform: uppercase;
 					font-size: 16px;
 				}
@@ -37,15 +97,102 @@ body{
 			margin-right: 0px; 
 		}
 	}
-	form{
-		input{
-			width: 60%;
-			float: left;
-			margin-right: 5px;
+	.number{
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		font-size: 20px;
+		i{
+			color:$pink;
+			text-shadow:1px 1px 1px black;
 		}
-		button{
-			width: 20%;
-			float: left;
+	}
+}
+.nav-block{
+	.nav-desctop{
+		padding: 20px 0 20px 0;
+		.col-md-3{
+			padding-top: 35px;
+		}
+		.logo{
+			font-size: 35px;
+			padding: 53px 0;
+			line-height: 20px;
+			color:$pink;
+			text-decoration: none;
+			text-transform: uppercase;
+			background: url('../img/lenta.png') no-repeat;
+			span{
+				text-shadow:1px 1px 1px black;
+			}
+		}
+		ul{
+			margin: 0 0 0 40px;
+			padding: 0px;
+			padding-top:20px; 
+			list-style: none;
+			li{
+				display: inline-block;
+				margin: 0 30px 0 0;
+				border-bottom:2px solid transparent;
+				transition: all 0.5s;
+				a{
+					color:#fff;
+					text-decoration:none;
+					font-size: 20px; 
+				}
+			}
+			li:last-child{
+				margin: 0;
+			}
+			li:hover{
+				border-bottom:2px solid $pink;
+			}
+		}
+	}
+	.navbar-default{
+		background: transparent;
+		border: 0px solid transparent;
+	}
+	.navbar-collapse{
+		border:0px solid transparent;
+	}
+	.nav-mobile{
+		.navbar-brand{
+			font-size: 25px;
+			text-decoration: none;
+			text-transform: uppercase; 
+			color:$pink;
+			text-shadow:1px 1px 1px black;
+		}
+		.navbar-toggle{
+			box-shadow:1px 1px 1px black;
+			border-color: $pink;
+			.icon-bar{
+				background:$pink;
+				text-shadow:1px 1px 1px black;
+			}
+		}
+		.navbar-toggle:hover,
+		.navbar-toggle:focus{
+			background: transparent !important;
+		}
+		ul{
+			li{
+				a{
+					font-size: 16px;
+					text-transform: uppercase; 
+					color: $pink;
+					text-shadow:1px 1px 1px black;				
+				}
+			}
+			li>a:hover,
+			li>a:focus{
+				color:#fff;
+				background: none;
+			}
 		}
 	}
 }
