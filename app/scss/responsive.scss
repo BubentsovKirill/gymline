@@ -1,0 +1,60 @@
+/* phone */
+@media (max-width: 767px){
+	.top-line{
+		ul{
+			text-align: center;
+			margin-bottom: 20px; 
+			li{
+				margin: 0 20px;
+				a{
+					font-size: 25px; 
+				}
+			}
+		}
+		form{
+			input{
+				width: 73%;
+			}
+			button{
+				width: 25%;
+			}
+		}
+	}
+};
+/* table */
+@media (max-width:991px) and (min-width:768px){
+	.top-line{
+		ul{
+			li{
+				a{
+					font-size: 25px; 
+				}
+			}
+		}
+		form{
+			input{
+				width: 70%;
+			}
+			button{
+				width: 25%;
+			}
+		}
+	}
+};
+/*min-desctop*/
+@media (max-width:1199px) and (min-width:992px){
+	.top-line{
+		form{
+			input{
+				width: 70%;
+			}
+			button{
+				width: 25%;
+			}
+		}
+	}
+};
+/*max-desctop*/
+@media (min-width:1200px){
+
+};

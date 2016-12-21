@@ -91,6 +91,7 @@ gulp.task('clear',function(){
 
 gulp.task('default',['browser-sync','jade','scss','js'], function(){
 	gulp.watch('app/*.jade', ['jade']);
+	gulp.watch('app/template-jade/*.jade', ['jade']);
 	gulp.watch('tmp/*.html', browserSync.reload);
 	gulp.watch('app/scss/*.scss', ['scss']);
 	gulp.watch('app/css/*.css', ['css']);
