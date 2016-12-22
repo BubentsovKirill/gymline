@@ -1,5 +1,24 @@
 /* phone */
-@media (max-width: 767px){
+@media (max-width: 766px){
+	header.index{
+		background:url('../img/header-img.jpg') no-repeat;
+		background-position: 20% 110%;
+		background-size: 171%; 
+		background-color:#e8e4e1; 
+	}
+	.heading{
+		width: 80%;
+		position: absolute;
+		left: 10%;
+		right: 0%;
+		top: 18%;
+		h1{
+			font-size: 26px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
 	.top-line{
 		ul{
 			li{
@@ -12,71 +31,80 @@
 			float: right;
 		}
 	}
-	.heading{
-		padding-top: 20%;
-		h1{
-			font-size: 35px; 
-		}
-		h2{
-			font-style: 20px;
+	main{
+		img{
+			padding-top: 20px;
+			margin:0px auto; 
 		}
 	}
-
-};
-/* table */
-@media (max-width:991px) and (min-width:768px){
-	.top-line{
-		ul{
-			text-align: center;
-			li{
-				margin-right: 20px;
+}
+	/* table */
+	@media (max-width:991px) and (min-width:767px){
+		header.index{
+			background:url('../img/header-img.jpg') no-repeat;
+			background-position: 20% 100%;
+			background-size: 130%; 
+			background-color:#e8e4e1; 
+		}
+		.heading{
+			width: 80%;
+			position: absolute;
+			left: 10%;
+			right: 0%;
+			top: 10%;
+			h1{
+				font-size: 38px;
+			}
+			p{
+				line-height: 34px;
+				font-size: 35px;
 			}
 		}
-	}
-	.navbar-header {
-		float: none;
-	}
-
-	.navbar-left, .navbar-right {
-		float: none !important;
-	}
-
-	.navbar-toggle {
-		display: block;
-	}
-	.navbar-collapse{
-		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-	}
-	.navbar-collapse.collapse {
-		display: none !important;
-	}
-
-	.navbar-nav {
-		float: none !important;
-	}
-
-	.navbar-nav > li {
-		float: none;
-	}
-
-	.collapse.in {
-		display: block !important;
-	}
-};
-/*min-desctop*/
-@media (max-width:1199px) and (min-width:992px){
-	.top-line{
-		form{
-			input{
-				width: 70%;
-			}
-			button{
-				width: 25%;
+		.top-line{
+			ul{
+				text-align: center;
+				li{
+					margin-right: 20px;
+				}
 			}
 		}
-	}
-};
-/*max-desctop*/
-@media (min-width:1200px){
+		.navbar-header {
+			float: none;
+		}
+		.navbar-left, .navbar-right {
+			float: none !important;
+		}
+		.navbar-toggle {
+			display: block;
+		}
+		.navbar-collapse.collapse {
+			display: none !important;
+		}
+		.navbar-nav {
+			float: none !important;
+		}
 
-};
+		.navbar-nav > li {
+			float: none;
+		}
+		.collapse.in {
+			display: block !important;
+		}
+		.carousel-caption{
+			top: 20%;
+			h1{
+				font-size: 50px;
+			}
+			h2{
+				font-size: 40px;
+			}
+		}
+	};
+	/*min-desctop*/
+	@media (max-width:1199px) and (min-width:992px){
+
+	};
+	/*max-desctop*/
+	@media (min-width:1200px){
+		
+	};

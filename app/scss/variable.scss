@@ -1,3 +1,18 @@
 $pink: #de0b5a;
 $yellow: #DAF80C;
 $green: #09B459;
+
+@keyframes animate{
+	0%{
+		top: 80%;
+		animation-timing-function: ease-in;
+	}
+	50%{
+		top: 85%;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		top: 80%;
+		animation-timing-function: ease-in;
+	}
+}
