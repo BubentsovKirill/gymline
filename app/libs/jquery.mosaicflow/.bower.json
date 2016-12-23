@@ -1,0 +1,21 @@
+{
+  "name": "jquery.mosaicflow",
+  "version": "0.2.5",
+  "main": [
+    "./jquery.mosaicflow.min.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "homepage": "https://github.com/sapegin/jquery.mosaicflow",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.5",
+    "commit": "3846c9cc722587e34d77bdf7ada6a5ab56e92528"
+  },
+  "_source": "https://github.com/sapegin/jquery.mosaicflow.git",
+  "_target": "^0.2.5",
+  "_originalSource": "jquery.mosaicflow",
+  "_direct": true
+}

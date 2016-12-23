@@ -34,7 +34,10 @@ gulp.task('js',function(){
 			'app/libs/jquery/dist/jquery.js',
 			'app/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
 			'app/libs/wow/dist/wow.js',
-			'app/js/main.js'
+			'app/libs/jquery.mosaicflow/jquery.mosaicflow.js',
+			'app/libs/fancybox/source/jquery.fancybox.pack.js',
+			'app/js/main.js',
+			'app/js/map.js'
 	])
 	.pipe(concat('js.min.js'))
 	//.pipe(uglify())
@@ -46,6 +49,7 @@ gulp.task('css',['scss'], function(){
 		'app/libs/normalize-css/normalize.css',
 		'app/libs/font-awesome/css/font-awesome.css',
 		'app/libs/wow/css/libs/animate.css',
+		'app/libs/fancybox/source/jquery.fancybox.css',
 		'app/css/style.css'
 	])
 	.pipe(sourcemaps.init())

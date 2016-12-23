@@ -10,7 +10,7 @@ $(document).ready(function(){
 	});
 
 	var topPadding = $('.top').height() + 40;
-	$('.schedule').css(
+	$('.schedule, .gallery, #blog, .article-full, .page404, .contacts').css(
 		'padding-top', topPadding
 	)
 
@@ -30,6 +30,8 @@ $(document).ready(function(){
 	$('.price table tr:odd').css('background','rgb(153, 153, 153)');
 	$('.price table tr:even').css('background','#e8e4e1');
 
+	$('a.fancyimage').fancybox(); 
+	$('.fancybox-skin').css('background','#333');
 });
 
 

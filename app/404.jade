@@ -1,0 +1,83 @@
+doctype html
+html(lang="rus")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Document
+		link(rel="stylesheet", href="css/style.min.css")
+	body.page404
+		header
+			.top.filter
+				.container-fluid.top-line
+					.container
+						.row
+							.col-md-8.col-sm-6.col-xs-5
+								ul
+									li
+										a(href="https://vk.com/" target="_blank")
+											i(class="fa fa-vk" aria-hidden="true")
+											span.hidden-xs.hidden-sm  vkontakte
+									li
+										a(href="https://www.facebook.com/" target="_blank")
+											i(class="fa fa-facebook" aria-hidden="true")
+											span.hidden-xs.hidden-sm  facebook
+									li
+										a(href="https://twitter.com/" target="_blank")
+											i(class="fa fa-twitter" aria-hidden="true")
+											span.hidden-xs.hidden-sm  twitter
+									li
+										a(href="https://www.instagram.com/" target="_blank")
+											i(class="fa fa-instagram" aria-hidden="true")
+											span.hidden-xs.hidden-sm  instagram
+
+							.col-md-4.col-sm-6.col-xs-7
+								a.number(href="#")
+									i.fa.fa-phone
+									span  +375-29-2353730
+
+									
+				.nav-block
+					nav.nav-desctop.hidden-xs.hidden-sm
+						.container
+							.col-md-3.text-center
+								a.logo(href="index.html")
+									span GymLine
+							.col-md-9
+								ul
+									li
+										a(href="index.html") Главная
+									li
+										a(href="price.html") Расписание и цены
+									li
+										a(href="gallery.html") Галерея
+									li.activ-link
+										a(href="blog.html") Блог
+									li
+										a(href="#") Контакты
+					nav.nav-mobile.hidden-md.hidden-lg.navbar.navbar-default
+						.container-fluid
+							.navbar-header
+								button.navbar-toggle(type="button" data-toggle="collapse" data-target="#Navbar")
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								a.navbar-brand(href="#") GymLine
+							#Navbar.collapse.navbar-collapse
+								ul.nav.nav-navbar
+									li
+										a(href="index.html") Главная
+									li
+										a(href="price.html") Расписание и цены
+									li
+										a(href="gallery.html") Галерея
+									li.activ-link
+										a(href="blog.html") Блог
+									li
+										a(href="#") Контакты
+		.page404
+			.container
+				.row
+					.col-xs-12.text-center
+						h1 Страница, которую вы ищете, не найдена. 
+		footer.navbar-fixed-bottom row-fluid
+		script(src="js/js.min.js")

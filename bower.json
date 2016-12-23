@@ -18,6 +18,8 @@
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "fontawesome#^4.7.0",
     "normalize-css": "normalize.css#^5.0.0",
-    "wow": "^1.1.2"
+    "wow": "^1.1.2",
+    "fancybox": "fancyBox#^2.1.5",
+    "jquery.mosaicflow": "^0.2.5"
   }
 }

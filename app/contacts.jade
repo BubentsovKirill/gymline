@@ -1,0 +1,151 @@
+doctype html
+html(lang="rus")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Document
+		link(rel="stylesheet", href="css/style.min.css")
+		script(src="//vk.com/js/api/openapi.js?136")
+		script
+			|VK.init({apiId: 5791188, onlyWidgets: true});
+		script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAX5VKnp4ux8RiHsbldfd1VnB82h4yiLD4")
+
+	body(onload="initialize()")
+		header
+			.top.filter
+				.container-fluid.top-line
+					.container
+						.row
+							.col-md-8.col-sm-6.col-xs-5
+								ul
+									li
+										a(href="https://vk.com/" target="_blank")
+											i(class="fa fa-vk" aria-hidden="true")
+											span.hidden-xs.hidden-sm  vkontakte
+									li
+										a(href="https://www.facebook.com/" target="_blank")
+											i(class="fa fa-facebook" aria-hidden="true")
+											span.hidden-xs.hidden-sm  facebook
+									li
+										a(href="https://twitter.com/" target="_blank")
+											i(class="fa fa-twitter" aria-hidden="true")
+											span.hidden-xs.hidden-sm  twitter
+									li
+										a(href="https://www.instagram.com/" target="_blank")
+											i(class="fa fa-instagram" aria-hidden="true")
+											span.hidden-xs.hidden-sm  instagram
+
+							.col-md-4.col-sm-6.col-xs-7
+								a.number(href="#")
+									i.fa.fa-phone
+									span  +375-29-2353730
+
+									
+				.nav-block
+					nav.nav-desctop.hidden-xs.hidden-sm
+						.container
+							.col-md-3.text-center
+								a.logo(href="index.html")
+									span GymLine
+							.col-md-9
+								ul
+									li
+										a(href="index.html") Главная
+									li
+										a(href="price.html") Расписание и цены
+									li
+										a(href="gallery.html") Галерея
+									li
+										a(href="blog.html") Блог
+									li.activ-link
+										a(href="contacts.html") Контакты
+					nav.nav-mobile.hidden-md.hidden-lg.navbar.navbar-default
+						.container-fluid
+							.navbar-header
+								button.navbar-toggle(type="button" data-toggle="collapse" data-target="#Navbar")
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								a.navbar-brand(href="#") GymLine
+							#Navbar.collapse.navbar-collapse
+								ul.nav.nav-navbar
+									li
+										a(href="index.html") Главная
+									li
+										a(href="price.html") Расписание и цены
+									li
+										a(href="gallery.html") Галерея
+									li.activ-link
+										a(href="blog.html") Блог
+									li
+										a(href="contacts.html") Контакты
+		.contacts
+			.container
+				.row
+					.col-xs-12.text-center
+						h2 Контакты
+				.row.pd
+					.col-md-8.line-right
+						.row
+							.col-xs-12
+								h3 Зал № 1 улица Суворова, дом 18.
+								#google-map1
+						.row
+							.col-xs-12
+								h3 Зал № 2 улица Якуба Коласа, дом 2.
+								#google-map2
+						.row.contacts-item
+							.col-xs-12
+								ul 
+									li
+										a(href="#")
+											i.fa.fa-phone
+											span  +375-29-2353730
+										span  (с 09.00 до 21.00)
+									li 
+										a(href="")
+											i.fa.fa-envelope-o
+											span  gymline2016@gmail.com
+									li
+										i.fa.fa-home
+										span  Зал №1 ул. Суворова, д. 18, метро Московская
+									li
+										i.fa.fa-home
+										span  Зал №2 ул. Я. Коласа, д. 2, метро Якуба Коласа
+									li
+										ul.icon
+											li
+												a(href="https://vk.com/" target="_blank")
+													i(class="fa fa-vk" aria-hidden="true")
+											li
+												a(href="https://www.facebook.com/" target="_blank")
+													i(class="fa fa-facebook" aria-hidden="true")
+											li
+												a(href="https://twitter.com/" target="_blank")
+													i(class="fa fa-twitter" aria-hidden="true")
+													span.hidden-xs.hidden-sm 
+											li
+												a(href="https://www.instagram.com/" target="_blank")
+													i(class="fa fa-instagram" aria-hidden="true")
+													span.hidden-xs.hidden-sm 
+
+						.row
+							.col-xs-12.col-sm-12.col-md-8.col-md-offset-2
+								form(action="" name="")
+									.form-group
+										input.form-control(type="text" name="name" placeholder="Вашe Имя")
+									.form-group
+										input.form-control(type="text" name="e-mail" placeholder="Ваш Email")
+									.four-group
+										textarea.form-control(name="text" id="message" placeholder="Сообщение")
+									button(name="send" class="btn btn-default feedback") Отправить
+					.col-md-4.social
+						.instagram
+							iframe(src="http://widget.instagramm.ru/?imageW=4&imageH=5&thumbnail_size=68&type=0&typetext=school_rg_narkevich&head_show=1&profile_show=1&shadow_show=1&bg=ffffff&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:320px;height:535px;")
+						.vk-block
+							//VK Widget
+							#vk_groups
+								script VK.Widgets.Group("vk_groups", {mode: 3, wide: "1",  width: "320px", height: "535px"}, 99419774);
+
+		footer
+		script(src="js/js.min.js")
